@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Apple Farm</title>
+    <link href="/appleclick/applestyle.css?v=Math.random()*265" rel="stylesheet" type="text/css" media="all">
+  </head>
+  
+  <body>
+      <p> This game saves automatically, so don't worry about saving unless you're done with your session. </p>
+    <button id=SaveBut onClick="saveGame()">Save Game</button>
+    <button id=LoadBut onClick="loadGame()">Load Game</button>
+  <section>
+<div class="row">
+    <p>Market</p>
+    <button id=Cursor onClick="buyCursor()">Buy A Cursor</button>
+    <p> # of Cursors </p> 
+    <span id="cursors">0</span><br />
+    <p> Cost of Cursors </p>
+    <span id="cursorCost">50</span>
+</div>
+  
+<div class="row">
+    <h1>Apple Farm</h1>
+    
+    <p>Click the apple to grow more apples. </p>
+    <div class=theapple>
+    <img src="/appleclick/img/apple.png" id = appleImg onclick="appleClick(1)">
+    </div>
+</div>
+
+<div class="row">
+    <p>Apple Counter</p>
+    <p id=apples>0</p>
+</div>
+</section>
+  <p id=saveText> Game Saved! </p>
+
+<!-- js below beware.... -->  
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+var apples = 0;
+var cursors = 0;
+var farms = 0;
+
+function appleClick(number) {
+    apples = apples + number;
+    document.getElementById("apples").innerHTML = apples;
+}
+
+
+
+function buyCursor(){
+    var cursorCost = Math.floor(50 * Math.pow(1.1,cursors));     //works out the cost of this cursor
+    if(apples >= cursorCost){                                   //checks that the player can afford the cursor
+        cursors = cursors + 1;                                   //increases number of cursors
+    	apples = apples - cursorCost;                          //removes the apples spent
+        document.getElementById('cursors').innerHTML = cursors;  //updates the number of cursors for the user
+        document.getElementById('apples').innerHTML = apples;  //updates the number of apples for the user
+    }
+    var nextCost = Math.floor(50 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
+    document.getElementById('cursorCost').innerHTML = nextCost;  //updates the cursor cost for the user
+}
+
+window.setInterval(function(){
+	
+	appleClick(cursors);
+}, 1000);
+var undefined = 0
+// saving the game
+function saveGame(){
+  var save = {
+      apples: apples,
+      cursors: cursors,
+      farms: farms,
+      
+   }
+    	localStorage.setItem("save", JSON.stringify(save));
+}
+function loadGame() {
+  var savegame = JSON.parse(localStorage.getItem("save"));
+  if (typeof savegame.apples !== "undefined"){ 
+    apples = savegame.apples;}
+  localStorage.removeItem("save")
+}
+
+// kill rogue decimals
+function prettify(input){
+    var output = Math.round(input * 1000000)/1000000;
+	return output;
+document.getElementById('apples').innerHTML = prettify(apples);
+document.getElementById('apples').innerHTML = prettify(cursors);
+}
+
+// shake
+var appleImg = document.getElementById("appleImg");
+function pulsate() {
+    appleImg.className = "move";
+    setTimeout(function() {appleImg.className = "still";}, 1000);
+}
+
+
+    function saveText1 (){
+         setTimeout(function(){ 
+         $("#saveText").show();
+        })
+   }
+   
+   function saveText2 (){
+         setTimeout(function(){ 
+          $("#saveText").hide();
+         })
+    }
+    
+    //autosave
+    window.setInterval(function() {
+    	saveGame();
+    	saveText1 ();
+    }, 240000);
+    
+    window.setInterval(function(){
+    	saveText2 ();
+    }, 240000+10000);
+  </script>
+  
+  </body>
+</html>
