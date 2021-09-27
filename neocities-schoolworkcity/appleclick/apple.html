@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Apple Farm</title>
+    <link href="/appleclick/applestyle.css?v=Math.random()*315" rel="stylesheet" type="text/css" media="all">
+  </head>
+  
+  <body> 
+  <section> </section>
+  <div class="row">
+    <div class="bordered">
+      <h2>Market</h2>
+      <div class ="product">
+        <button id=farmer onClick="buyfarmer()">Buy A Farmer</button>
+        <p> # of Farmers:  
+        <span id="farmerNum">0</span> </p>
+        <p> Cost of Farmers:
+        <span id="farmerCost">50</span> </p>
+      </div>
+      
+ <div class ="product">
+        <button id="gardenBuy" onClick="buygarden()">Buy A Garden</button>
+        <p> # of Gardens:  
+        <span id="gardenNum">0</span> </p>
+        <p> Cost of Gardens:
+        <span id="gardenCost">500</span> </p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="row">
+    <h1>Apple Farm</h1>
+        <p>Apple Counter:</p>
+    <p id=apples>0</p>
+        <div class=theapple>
+    <img src="https://schoolworkcity.neocities.org/appleclick/img/apple.png" id = appleImg onclick="appleClick(1); squeeze()"> 
+    </div>
+  </div>
+  
+  <div class="row">
+      <div class="bordered">
+      <h2> Messages from Me </h2>
+      <p> gardens added. they click 5 times/sec </p>
+      </div>
+  </div>
+  
+  <section> 
+<p> This game saves automatically, so don't worry about saving unless you're done with your session. </p>
+    <button id=SaveBut onClick="saveGame()">Save Game</button>
+    <button id=LoadBut onClick="loadGame()">Load Game</button>
+  <p id=saveText> Game Saved! </p>
+</section>
+
+<!-- js below beware.... -->  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/appleclick/script.js"></script>
+  </body>
+</html>
