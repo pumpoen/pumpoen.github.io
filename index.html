@@ -2,6 +2,68 @@
 <html>
 <head>
 <title>the awersome website</title>
+<style>
+    body {
+        background: rgb(245, 5, 45);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(41, 61, 239);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius:30px;
+
+    }
+    nav h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    nav ul {
+        list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        padding:10px;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
 </head>
 
 <body>
@@ -15,11 +77,22 @@
     </nav>
     <main>
         <div class="sidebar">
+            <img src="https://cdn.lowgif.com/full/913accb195379c60-.gif">
+
         </div>
     
         <section class="content"> 
             <h2>hi i am alyssa</h2>
             <p>i am 16 and i go to fontaibleau</p>
+
+            <div id="interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>evil</li>
+                    <li>violence</li>
+                    <li>punching</li>
+                </ul>
+            </div>
         </section>
     </main>
 </section>
