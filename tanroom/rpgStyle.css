@@ -48,7 +48,7 @@ img {
   display: flex;
   margin-left:92%;
   margin-right:35%;
-	width:80px;
+	width:10%;
 	bottom:17%;
 	
 }
@@ -66,10 +66,10 @@ img {
 }
 
 .doorways {
-max-width:80.7px;
+max-width:9.5%;
 } 
 .ground {
-  max-width:690px;
+  max-width:81%;
 }
 .noClick {
   pointer-events:none
