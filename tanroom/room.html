@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="/tanroom/style.css?v=Math.random()*215" rel="stylesheet" type="text/css" media="all">
+<title> TanRoom </title>
+</head>
+
+<body>
+
+<section>
+<div id="allContent" class="container">
+  <div class="tanSelect">
+    <img src="bg/roombg.png">
+    <div class="theTanInfo">        
+    JEREMY <br> tanlet - 8 days old
+    </div>
+
+    <nav class ="tanMove">
+    <img src="sprites/arrow2.png" id = "tanForw" class="tanMoveBut" onclick="plusScenes(1)">
+    <img src="sprites/arrow.png" id = "tanBack" class="tanMoveBut" onclick="plusScenes(-1)">
+    </nav>
+  </div>
+  
+  <div class=tanSprite>  
+    <img src="/tanroom/sprites/tan.png"/> 
+  </div>
+  
+<div class="allPanel">
+  <img id="panelOpen" src="sprites/panel.png"/> 
+  <div class="statBars">
+    <div id="health" class="statBar"> 
+      <div class = "energySet">
+      <img id="healthBar" class="energyIcon" src="sprites/wideBar.png"/>
+     </div>
+    </div>
+    <div id="happy" class="statBar"> 
+      <div class = "energySet">
+      <img id="happyBar" class="energyIcon" src="sprites/wideBar.png"/>
+     </div>
+    </div>
+    <div id="hunger" class="statBar"> 
+      <div class = "energySet">
+      <img id="hungerBar" class="energyIcon" src="sprites/wideBar.png"/>
+     </div>
+    </div>
+    <div id="clean" class="statBar"> 
+      <div class = "energySet">
+      <img id="cleanBar" class="energyIcon" src="sprites/wideBar.png"/>
+     </div>
+    </div>    
+  </div>
+<div class="panelIcons">
+    <img class="panelIconsBut" src="sprites/stat.png"/><img class="panelIconsBut" src="sprites/summary.png"/><img class="panelIconsBut" src="sprites/setting.png"/>
+  </div>  
+</div>
+<div class ="itemDisplay"> 
+    <img id="hand" onclick="toggleCursor('hand', 'handCursor')"  src="sprites/handCursor.png">
+    <img id="food" onclick="toggleCursor('food', 'foodCursor')" src="sprites/food.png">    
+    <img id="clean" onclick="toggleCursor('clean', 'cleanCursor')"  src="sprites/clean.png">    
+</div>
+</div>
+
+</section>
+
+
+  
+
+<!--do not touch at all costs -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/tanroom/main.js?v=Math.random()*285"></script>
+</body>
+</html>

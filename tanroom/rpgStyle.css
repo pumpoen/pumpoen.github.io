@@ -1,0 +1,76 @@
+
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 10px;
+  border:5px;
+  border-color: black;
+  margin-left: 12.5%;
+  margin-right:12.5%;
+  word-wrap: break-word;  
+ overflow:hidden;
+}
+section, ul {
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+
+}
+
+section {    
+  text-align: center;
+  padding:2.5%;
+}
+
+p, container {
+  text-align:center;
+  padding:5%;
+
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  color: white;
+  width:90%;
+}
+
+img {
+  width: 100%;    
+  display: block;
+  margin: auto;
+  height: auto;
+}
+.character {
+  position: absolute;
+  display: flex;
+  margin-left:92%;
+  margin-right:35%;
+	width:80px;
+	bottom:17%;
+	
+}
+.floor {
+  position: absolute;
+  bottom:1.9%;
+  width:100%;
+  margin-right:2px;
+
+}
+.walkable {
+  display: inline; 
+  justify-content:space-around;  
+  padding:0px;
+}
+
+.doorways {
+max-width:80.7px;
+} 
+.ground {
+  max-width:690px;
+}
+.noClick {
+  pointer-events:none
+}

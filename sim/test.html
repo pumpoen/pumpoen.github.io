@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="/sim/style.css?v=Math.random()*245" rel="stylesheet" type="text/css" media="all">
+<title> School Safe Calculator </title>
+</head>
+
+<body>
+
+<section>
+  <div class="container">
+  
+  
+  
+     <div class="Scenes">
+      <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="sprites/girl.png"/>
+      </div>
+      <div class="end">        
+      i'm a default png of a woman and i love being in a hallway. <br> do you think you could make me appear or disappear if you love me?
+      </div>
+      
+      </div>
+
+      <div class ="Scenes">
+       <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="sprites/test.png">
+      </div>
+      <div class="dialog">
+      god butterfly yes <br> fly away
+      </div>
+      </div>
+      
+       <div class="Scenes">
+      <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="sprites/girl.png"/>
+      </div>
+      <div class="dialog">        
+     hey butterfly what are you doing here <br> go away freak</div>
+      </div>
+      
+      <div class ="Scenes">
+       <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="sprites/test.png">
+      </div>
+      <div class="dialog">
+      i have every right to be in this hallwau im just an innocent insect. you're a gross and slimy woman
+      </div>
+      </div>
+      
+       <div class="Scenes">
+      <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="sprites/girl.png"/>
+      </div>
+      <div class="dialog">        
+     how dare you say that ill have you know im the third member of my family to have a job within the past 20 years and i tie my shoes all by myself and i know all the words to the ed sheeran song "shape of you". get educated foolish bug 
+     </div>
+      </div>
+      
+       <div class="Scenes">
+      <img src="bg/hall.jpg">
+      <div class="myimgdivshowhide">
+      <img src="/sim/sprites/eye.png"/>
+      </div>
+      <div class="dialog">        
+     can you all calm down im trying to balance my chakra. oh hey there hot stuff [blushes and goes bloodshot]. do you wanna walk to class together or something tee-hee
+     </div>
+  <div class="choice">
+  <div class="choicebutton" onclick="currentScene(1)"> hi </div>
+  </div>
+      </div>
+
+       <div class="Scenes">
+      <img src="bg/black.png">
+      <span class="noback"> 
+      <div class="end">       
+    the end. this ending is just a placeholder dont worry there's gonna be more later oh this is a good text of if my text overflow still works. nice ahah it does
+     </div>
+     </span>
+      </div>
+
+  </div>
+
+<!-- not connected -->
+
+  <nav class ="thebuttons">
+    <button id = prev type="button" class="prev" onclick="plusScenes(-1)">back</button>
+    <button id = next type="button" class="next" onclick="plusScenes(1)">next</button> 
+  </nav>
+  <br>
+<nav class ="thebuttons2">
+      <button id= togdisplay type="button" class="togglebtn">toggle text</button>  
+  </nav>
+
+
+</section>
+
+
+  
+
+<!--do not touch at all costs -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function ShowOrHide(){
+  $('.togglebtn').click(function ShowOrHide(){
+    $('.dialog').toggle();
+    $('.end').toggle();
+    $('.start').toggle();
+    $('.next').toggle();
+
+  });
+});
+</script>
+  
+  <script>
+  var sceneIndex = 1;
+showScenes(sceneIndex);
+
+function plusScenes(n) {
+  showScenes(sceneIndex += n);
+}
+
+function currentScene(n) {
+  showScenes(sceneIndex = n);
+}
+
+function showScenes(n) {
+  var i;
+  var scenes = document.getElementsByClassName("Scenes");
+  var choicebuttons = document.getElementsByClassName("choicebutton");
+  if (n > scenes.length) {sceneIndex = 1}    
+  if (n < 1) {sceneIndex = scenes.length}
+  for (i = 0; i < scenes.length; i++) {
+      scenes[i].style.display = "none";  
+  }
+  for (i = 0; i < choicebuttons.length; i++) {
+      choicebuttons[i].className = choicebuttons[i].className.replace(" active", "");
+  }
+  scenes[sceneIndex-1].style.display = "block";  
+
+  //[sceneIndex-1].className += " active";
+
+ //controls buttons being deleted or showing//
+ 
+  if (n === 1) {
+      $("button.prev").hide()
+  }
+  if (n > 1) {
+    $("button.prev").show()
+    $("button.next").show()
+  }
+    if (n === scenes.length) {
+      $("button.next").hide()
+    }
+      if (n === scenes.length-1) {
+      $("button.next").show()
+  }
+
+
+}
+
+  </script>
+
+</body>
+</html>
