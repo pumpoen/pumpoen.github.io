@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Park Game</title>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link href="/fun/parkGame/style.css?v=Math.random()*371" rel="stylesheet" type="text/css" media="all">
+</head>
+<body style="user-select: none;">
+<section>
+   <nav>
+    <div id=navbarLinks>
+      <li><a class="specificNavLink" href="https://schoolworkcity.neocities.org/">Home</a></li>
+      <li><a class="specificNavLink" href="https://schoolworkcity.neocities.org/1/about.html">About</a></li>
+      <li><a class="specificNavLink" href="https://schoolworkcity.neocities.org/1/games.html"> Games</a></li> 
+      <li><a class="specificNavLink" href="https://schoolworkcity.neocities.org/fun/claus"> The Clausroom</a></li>
+    </div>
+  </nav>
+  
+  <div class="row container">
+    
+    <div class="column box" id=columnTwo style="height:78vh">
+      <p style="user-select: none;"> park game. click on a square for a suprise. not compatible with mobile browsers</p>
+   <div id=inputArea style="display:inline-grid"> 
+     sx: <input id="sxInput" type="text" value="100" style="width:60px"><br>
+     sy: <input id="syInput" type="text" value="10" style="width:60px"><br>
+     sWidth: <input id="sWidthInput" type="text" value="300" style="width:60px"><br>
+     sHeight: <input id="sHeightInput" type="text" value="175" style="width:60px"><br>
+     dx: <input id="dxInput" type="text" value="190" style="width:60px"><br>
+     dy: <input id="dyInput" type="text" value="0" style="width:60px"><br>
+     dWidth: <input id="dWidthInput" type="text" value="100" style="width:60px"><br>
+     dHeight: <input id="dHeightInput" type="text" value="175" style="width:60px">
+   </div>
+      <img id="face" style="display:none;" src="https://schoolworkcity.neocities.org/school/canvas/circle.png">
+      <img id="faceSprites" style="display:none;" src="https://schoolworkcity.neocities.org/fun/parkGame/img/sprite.png">
+      
+      <canvas id="canvas" width="300" height="300"></canvas>
+
+    </div>
+  </div>
+</section>
+<script src="https://schoolworkcity.neocities.org/fun/parkGame/script.js?v=Math.random()*390"></script>
+</body>
+</html>

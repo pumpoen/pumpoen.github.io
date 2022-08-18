@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <link href="/fun/quiz/quizStyle.css?v=Math.random()*364" rel="stylesheet" type="text/css" media="all">
+  <title>da quiz</title>
+  </head>
+
+<body onload="init()">
+  <nav>
+  <h1>  <a href="https://schoolworkcity.neocities.org/">School Website</a></h1>
+  <a href="https://schoolworkcity.neocities.org/1/about.html">About</a>
+  <a href="https://schoolworkcity.neocities.org/sim/test.html">Sim</a>
+  <a href="https://schoolworkcity.neocities.org/appleclick/apple.html">Apple Clicker</a>
+  <a href="https://schoolworkcity.neocities.org/tanroom/rpg.html">Walking Test</a>
+
+</nav>
+<nav>
+<a id=introvert>0</a>
+<a id=extrovert>0</a>
+<a id=reserved>0</a>
+<a id=outgoing>0</a>
+</nav>
+  <div id = "pgMainMenu">
+    <h1 id = "headerTitle">tha ultimate quiz!!1!<font size = 1>&reg;</font></h1>
+    <h3 id = "tagline">(oh yeah baby here it is)</h3>
+  <section id=quizInfo>
+      <p id = "intro">
+        when you take this quiz your mind will expand,,, you will know so much about yourself and tha world around you B). you'll face enemies of the mental variety, and be challenged with a series of DEEP and PERSONaL questions.
+<font size=1></font></p>
+    <h3 id = "quote">can you beat my wizard?</h3>
+      <p id = "disclaimer"><font size = 1>^Note: Theres no wizard. He escaped long ago. Please let him know I love him if you find him.</font></p>
+      <p id = "options:">      </p>
+
+      <label for="listOptions"><h4 id = "listOptionsText">To Begin:</h4></label>
+        <div id = "listOptions">
+  
+        <button id="bStartQuiz" name="startQuiz" onclick="startQuiz()" label="Start">Start Quiz</button>
+        </div>
+  </section>
+  </div>
+
+  <div id = "pgQuiz">
+  <section id=quizContainer>
+    <h2 id="question">Question</h2>
+        <p><input id="OptAnswer1" type="radio" name="answer" value="1"><label for="OptAnswer1"><span id = "answerPos1">Answer1</span></label></p>
+        <p><input id="OptAnswer2" type="radio" name="answer" value="2"><label for="OptAnswer2"><span id = "answerPos2">Answer2</span></label></p>
+        <p><input id="OptAnswer3" type="radio" name="answer" value="3"><label for="OptAnswer3"><span id = "answerPos3">Answer3</span></label></p>                 
+        <p><input id="OptAnswer4" type="radio" name="answer" value="4"><label for="OptAnswer4"><span id = "answerPos4">Answer4</span></label></p>
+  
+            <button id="bResetQuiz" onclick="resetQuiz()">Cancel Quiz</button>
+            <button id="bSubmitAnswer" onclick="checkAnswer()">Submit Answer</button>
+  </section>
+  </div> 
+   <div id="QuizResults">
+  <section id=quizContainer>
+    <h3><span>Quiz Results</span></h3>
+    <p id = "QuizScore">Final Score: 0</p>
+    <button id="bResetQuiz" onclick="resetQuiz()"> Try Again? </button>
+  </section>
+  </div>
+
+  
+<script src="/fun/quiz/quizScript.js?v=Math.random()*281"></script>
+  
+  
+  </body>
+</html>

@@ -1,0 +1,159 @@
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  overflow:hidden;
+  background-image: url("https://schoolworkcity.neocities.org/fun/prettyCSS/img/Dirt_background_JE2.png");
+  background-size:100%;
+  background-color:#72a362;
+  margin:0px;
+}
+section {
+   margin-left: 10%;
+    margin-right: 10%;
+    background: #53834e;
+    height: 99.39vh;
+    border: #1a3e1f;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.box {
+  padding:2px;
+  border-radius:6px;
+  background-color: #fdfff5;
+  -moz-box-shadow:inset 0px 8px 16px #68475a96, 0px 4px 12px #07002c9e;
+  -webkit-box-shadow:inset 0px 8px 16px #68475a96, 0px 4px 12px #07002c9e;
+  box-shadow:inset 0px 8px 16px #68475a96, 0px 4px 12px #07002c9e;
+
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 24px;
+  margin:2%;
+  
+}
+#columnOne {
+   margin-top:2%;
+   background-color:#f4eff5;
+   max-width:20%;
+   min-width:20%;
+   margin-bottom:14%;
+   margin-right:10%;
+}
+#columnTwo{
+  background-color:#f4eff5;
+  height: 72vh; 
+}
+.columnOneImage {
+  max-width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent:400px;
+  image-rendering: high-quality;
+}
+
+.columnTwoImage {
+  width:25%;
+  filter: drop-shadow(10px 6px 6px hsla(106, 23%, 34%, 0.45));
+  margin-left: auto;
+  margin-right: auto;
+  text-indent:400px;
+  image-rendering: high-quality;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  -moz-box-shadow:inset 0 0 20px 0px #68475a8c, 0px 4px 12px 0px #07002c47;
+  -webkit-box-shadow:inset 0 0 20px 0px #68475a8c, 0px 4px 12px 0px #07002c47;
+  box-shadow:inset 0 0 20px 0px #68475a8c, 0px 4px 12px 0px #07002c47;
+}
+#navbarLinks {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+}
+.specificNavLink {
+    height:10%;
+  }
+
+li {
+  display: inline-block;
+  text-align: center;
+
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color:#302828;
+  background-color: #dbd0df;
+  box-shadow: inset 0px 0px 15px 0px #4425378c, 0px 4px 12px 0px #07002c47;
+}
+
+img {
+  max-height: 50vh;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #bbb;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+

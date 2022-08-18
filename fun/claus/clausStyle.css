@@ -1,0 +1,250 @@
+
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 10px;
+  text-align:center;
+  border:5px;
+  border-color: black;
+  margin-left: 14%;
+  margin-right:14%;
+  word-wrap: break-word;
+  
+}
+section, ul {
+  border: 5px;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:10px;
+  border-color: #c29863;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+  list-style-position: inside;
+  list-style-type:none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+
+}
+section {    
+  text-align: left;
+  text-indent: 45px;
+  padding-left: 5%;  
+  padding-right: 5%;
+}
+h1, h2 {
+  color:sienna;
+  text-shadow: 2px 2px 5px peru;
+  text-align:center;
+  margin-top:0px;
+}
+
+#topNav {
+  font-size: 80%;
+  border: 3px;
+  background-color: #f7eee1;
+  border-color: #c29863;
+  border-style: ridge;
+  padding: 0.5%;
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  border-radius: 4px;
+
+}
+#firstTitle {
+font-size:100%;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+
+}
+
+.button-37 {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+
+.scenes {
+  display: none
+}
+
+.myimgdivshowhide {
+  position: absolute;
+  margin-left:25%;
+  margin-right:20%;
+  margin-top:-41.3%;
+	max-width:50%;
+	bottom:0%;
+	
+}
+.dialog, .end, .start {
+  text-align: left;
+  position: absolute;
+  font-size: 18px;
+  bottom: 2%;
+  left: 1%;
+  right: 1%;
+  max-height:20%;
+  height: 20%;
+  line-height: 1.6;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+
+.thebuttons {
+  position:initial;
+  text-align: center;
+  bottom:90px;
+  text-indent: 0px;
+  background-color: #f7f7eb;
+  border: 3px;
+  border-color: #c29863;
+  border-style: ridge;
+  padding: 1%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.clausContent {
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: #ffffe0;
+  padding: 4%;
+}
+
+#next, #prev,#help, #helpMe, .togglebtn, .thebuttons2 {
+  display: inline;
+  cursor: pointer;
+  padding:0%;
+  margin:0.1%;
+}
+
+
+#togdisplay {
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%
+}
+
+
+
+
+
+
+
+
+
+
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: darkblue;
+}
+
+.commentBox {
+  max-height:400px;
+  overflow: auto;
+  margin-bottom:10px;}
+
+#HCB_comment_box{
+  border: 3px solid;
+  border-color: burlywood; 
+  border-style: ridge;
+  padding: 10px; 
+  color:#FFFFFF; 
+  background: rgba(0, 0, 0, 0.5);
+  }
+.hcb-mod b{
+  color:#0088AF;
+  }
+#HCB_comment_box textarea, #HCB_comment_box input.text{
+  border: 3px solid;
+  border-color: burlywood; 
+  border-style: ridge;
+  background-color:#f8f8f8; 
+  max-width:90%;
+  }
+#HCB_comment_box .hcb-wrapper-half{
+  display:block;
+  width:50%;
+  float:left;
+  }
+#HCB_comment_box .hcb-wrapper{
+  clear:both;
+  }
+#HCB_comment_box input.text{
+  display:block;width:95%;
+  }
+#HCB_comment_box input.submit{
+  border: 3px solid;
+  border-color: burlywood; 
+  border-style: ridge;
+  background-color:#F26646;
+  color:#000;font-weight:bold;
+  cursor:pointer;
+  }
+#HCB_comment_box div.comment{
+  color:#FDB3A5; 
+  background: rgba(0, 0, 0, 0.5); 
+  border:3px double burlywood;
+  margin:5px; padding:2px;
+  }
+#HCB_comment_box .comment .likes{color: #00FF00;}
+#HCB_comment_box .hcb-link{color:#0088AF;text-decoration:none;} 
