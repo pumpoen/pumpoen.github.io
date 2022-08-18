@@ -1,0 +1,107 @@
+
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 10px;
+  border:5px;
+  border-color: black;
+  margin-left: 14.5%;
+  margin-right: 14.5%;
+  word-wrap: break-word;  
+}
+h1, h2 {
+  color:sienna;
+     text-shadow: 2px 2px 5px peru;
+}
+section, ul {
+  margin-top:auto;
+  margin-bottom:auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width:69.5%;
+  height:auto;
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+
+}
+
+section {    
+  text-align: center;
+  padding:1%;
+}
+canvas {
+  image-rendering: optimizeSpeed;             /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated;                 /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+p, container {
+  text-align:center;
+
+}
+#canvas {
+    border-style: ridge;
+    border-width: 4px;
+    border-color: FireBrick;
+    width: 75%;
+    min-height: 5vh;
+  }
+
+.container {
+  position: relative;
+  margin: auto;
+  color: white;
+  width:94%;
+}
+#mobileControls {
+  display:none;
+} 
+
+button {
+  border: 2px;
+  background-color:#fcf4e9;
+  border-style:ridge;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:6px;
+  border-color: burlywood;
+}
+
+
+button, section, body, #mobileControls {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+  }
+  
+#canvasWidth {
+  width:100%}  
+  
+img {
+  width: 20%;    
+  display: none;
+  margin: auto;
+  height: auto;
+}
+.container {
+overflow:hidden;
+}
+
+#charSprite {
+  width:10%;
+  }

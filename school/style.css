@@ -1,0 +1,108 @@
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 30px;
+  text-align:center;
+  border:5px;
+  border-color: black;
+  margin-left: 14%;
+  margin-right:14%;
+  word-wrap: break-word;
+  
+}
+section, ul {
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+  list-style-position: inside;
+  list-style-type:none;
+  padding-top: 4%;
+
+
+}
+section {    
+  text-align: left;
+  text-indent: 45px;
+  padding-left: 5%;  
+  padding-right: 5%;
+}
+h1, h2 {
+  color:sienna;
+  text-shadow: 2px 2px 5px peru;
+}
+.navLinks {
+  font-size:10px;
+  }
+h1 {
+  font-size:14px;
+  }
+h2 {
+  font-size:16px;}
+nav, ul {
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  padding-bottom: 1%;
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+.forklifts {
+top:50px;
+}
+#forkliftOne, #forkliftTwo {
+  text-align:center;
+  width:10%;
+  display:grid;
+  }
+  
+#forkliftThree {
+  text-align:center;
+  width:9.8%;
+  display:grid;
+  }
+  
+  
+.finish {
+  width: 9%;
+  position: absolute;
+  top: 19.5%;
+  left: 1000px; 
+  }
+
+#theRectangle {
+  overflow:hidden;
+  height: 23vw;
+}
+#win {
+  margin-top:10%;
+  padding-top: 1%;
+  text-indent: 0px;
+  margin-bottom:10%;
+  margin-left: 24.5%;
+  border: 3px;
+  border-color: cornflowerblue;
+  border-style: ridge;
+  background-color: aliceblue;
+  position: absolute;
+  display:none;
+  cursor:pointer;
+
+}
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: darkblue;
+}

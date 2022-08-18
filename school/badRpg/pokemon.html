@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="/school/badRpg/badStyle.css?v=Math.random()*346" rel="stylesheet" type="text/css" media="all">
+<title> TanRoom </title>
+</head>
+
+<body onkeydown="getKeyAndMove(event)" onkeyup="getKeyAndStop(event)">
+<h2> arrow keys or wasd to move. press shift to toggle run </h2>
+
+<section>
+<div id="allContent" class="container">
+
+    <div class="character">  
+    <img id="charSprite" src="https://schoolworkcity.neocities.org/school/badRpg/badSprites/pokemonSprite.png"/> 
+    <canvas id="canvas" style="border-style: solid; border-width: 4px;" width="830" height="430"></canvas>
+  </div>
+</div>
+<button onclick="mobileControlToggle()">Show mobile controls?</button>
+<div id=mobileControls>
+  <button onclick="mobileControlMoveButtons(38)">up</button><br>
+  <button onclick="mobileControlMoveButtons(37)">left</button><button onclick="mobileControlMoveButtons(39)">right</button><br>
+  <button onclick="mobileControlMoveButtons(40)">down</button><br>
+  <button onclick="mobileControlMoveButtons(16)">run</button>
+</div>
+</section>
+
+
+  
+<!--do not touch at all costs <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="/school/badRpg/pokemonScript.js?v=Math.random()*334"></script>
+
+</body>
+</html>

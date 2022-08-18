@@ -1,0 +1,76 @@
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 30px;
+  text-align:center;
+  border:5px;
+  border-color: black;
+  margin-left: 14%;
+  margin-right:14%;
+  word-wrap: break-word;
+  
+}
+section, ul {
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+  list-style-position: inside;
+  list-style-type:none;
+  padding-top: 4%;
+
+
+}
+
+img {
+  display:none; 
+}
+
+section {    
+  text-align: left;
+  text-indent: 45px;
+  padding-left: 5%;  
+  padding-right: 5%;
+}
+h1, h2 {
+  color:sienna;
+  text-shadow: 2px 2px 5px peru;
+}
+.navLinks {
+  font-size:10px;
+  }
+h1 {
+  font-size:14px;
+  }
+h2 {
+  font-size:16px;}
+
+#topNav {
+  font-size: 80%;
+  border: 3px;
+  border-color: #c29863;
+  border-style: ridge;
+  padding: 0.5%;
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+}
+
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: darkblue;
+}

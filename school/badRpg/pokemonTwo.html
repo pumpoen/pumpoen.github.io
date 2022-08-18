@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="https://schoolworkcity.neocities.org/school/badRpg/badStyle.css?v=Math.random()*348" rel="stylesheet" type="text/css" media="all">
+<title> dont sue </title>
+</head>
+
+<body onkeydown="getKeyAndMove(event)" onkeyup="getKeyAndStop(event)">
+<h2> arrow keys or wasd to move. press shift to toggle run </h2>
+
+<section>
+<div id="allContent" class="container">
+
+    <div class="character">  
+    <img id="charSprite" src="https://schoolworkcity.neocities.org/school/badRpg/badSprites/pokemonSprite.png"/> 
+   <div id=canvasWidth> <canvas id="canvas" style="border-style: solid; border-width: 4px;"></canvas> </div>
+  </div>
+</div>
+<button onclick="mobileControlToggle()">Show mobile controls?</button>
+<div id=mobileControls>
+  <button ontouchstart="mobileControlMoveButtons('up')" ontouchend="getKeyAndStop()">up</button><br>
+  <button ontouchstart="mobileControlMoveButtons('left')" ontouchend="getKeyAndStop()">left</button> <button ontouchstart="mobileControlMoveButtons('right')" ontouchend="getKeyAndStop()">right</button><br>
+  <button ontouchstart="mobileControlMoveButtons('down')" ontouchend="getKeyAndStop()">down</button><br>
+  <button ontouchstart="mobileControlMoveButtons('run')" ontouchend="getKeyAndStop()">run</button>
+</div>
+</section>
+
+
+  
+<!--do not touch at all costs <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="/school/badRpg/pokemonScript.js?v=Math.random()*348"></script>
+
+</body>
+</html>
