@@ -1,0 +1,19 @@
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0px;
+}
+
+
+body {
+    background-image: url('https://schoolworkcity.neocities.org/experiment/soap/img/spongbob_patrick.gif');
+    background-size: cover;
+  color: darkslategrey;
+  word-wrap: break-word;
+  
+}
+
+img {
+  display:none; 
+}
+}
