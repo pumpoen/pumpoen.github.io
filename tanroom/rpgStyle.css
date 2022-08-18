@@ -1,0 +1,92 @@
+
+body {
+  font-family: 'Varela Round', 'roboto', sans-serif;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  padding: 10px;
+  border:5px;
+  border-color: black;
+  margin-left: 14.5%;
+  margin-right: 14.5%;
+  word-wrap: break-word;  
+}
+section, ul {
+  margin-top:auto;
+  margin-bottom:auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width:69.5%;
+  border: 3px;
+  border-color: burlywood;
+  border-style: ridge;
+  background-color: LightGoldenRodYellow;
+
+}
+
+section {    
+  text-align: center;
+  padding:1%;
+}
+
+p, container {
+  text-align:center;
+
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  color: white;
+  width:94%;
+}
+
+img {
+  width: 100%;    
+  display: block;
+  margin: auto;
+  height: auto;
+}
+.container {
+overflow:hidden;
+}
+.character {
+  position: absolute;
+  display: flex;
+  width:9.5%;
+  margin-left:48.5vw;
+	bottom:17%;
+	
+}
+.floor {
+  position: absolute;
+    bottom: 2.7%;
+    display: flex;
+    width: 89%;
+    margin-left: .1%;
+
+}
+.walkable {
+  display: inline; 
+}
+
+.doorways {
+min-width: 10.65%;
+
+} 
+.ground {
+  min-width:90.8%;
+}
+.noClick {
+  pointer-events:none
+}
+ #roomOne {
+position: static;
+display: block;
+}
+
+.room {
+  display:none
+  }
